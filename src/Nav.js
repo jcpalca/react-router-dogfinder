@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-function Nav({ names=["Whiskey", "Duke", "Perry"] }) {
+const dogs = ["Whiskey", "Duke", "Perry"]
+
+function Nav({ names= dogs}) {
   return (
     <div className="Nav">
       {names.map(name => (
